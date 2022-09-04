@@ -7,10 +7,10 @@
   <title>Teste Calculadora Imediata</title>
   <style>
     body {
-      color: rgb(0, 21, 0);
+      color: rgb(255, 0, 0);
       font-family: 'Times New Roman', Times, serif;
       font-size: larger;
-      background-color: rgb(12, 0, 17);
+      background-color: rgb(158, 136, 168);
     }
     h3 {
       color: rgb(117, 76, 0);
@@ -19,27 +19,28 @@
       font-family: 'Times New Roman', Times, serif;
     }
     p {
-      color: rgb(70, 85, 0);
+      color: rgb(1, 5, 247);
       font-size: medium;
     }
+  
   </style>
 </head>
 <body>
-  <h3>Esse site é um teste de aprendizado</h3>
-  <p>Aqui nesse site estou praticando a programação e tratamento de dados obtidos a partir do comando de prompt</p>
+  <h3>Olá, curioso</h3>
+
   <Script>
     var nome = prompt ('Qual o seu nome?')
-    alert ('Bem vindo ' + nome)
+    document.write (`Bem vindo, ${nome}! Esse site é um teste para meu aprendizado em JS. <br>`)
     var n1 = Number.parseFloat ( prompt ('Digite o primeiro número'))
     var n2 = Number.parseFloat ( prompt ('Digite o segundo número'))
     var s = n1 + n2
     var m = n1 * n2
     var d = n1 / n2
     var n = n1 - n2
-    alert ('A soma dos números é '+ s)
-    alert ('O produto dos números é ' + m)
-    alert ('A subtração dos números é ' + n)
-    alert ('A divisão dos números é ' + d)
+    document.writeln (`A soma de ${n1} com ${n2} é ${s}. <br>`)
+    document.write (`A diferença entre ${n1} e ${n2} é de ${n}. <br>`)
+    document.write (`O produto entre ${n1} e ${n2} é ${m}. <br>`)
+    document.write (`A razão entre ${n1} e ${n2} é ${d}. <br>`)
 
   </Script>
 </body>
